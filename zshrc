@@ -27,9 +27,9 @@ TWIDTH=102
 
 alias h=history
 alias p=popd
-alias j="jobs -l"
-alias ls="ls -GF"
-alias less="less -X"
+alias j='jobs -l'
+alias less='less -X'
+alias grep='grep --color=auto'
 alias sm='echo -ne "\e[8;${THEIGHT};${TWIDTH}t"'
 alias allsmall='xwininfo -children -root |perl -ne '\''if (m,(pts/\d+),) { `echo -ne "\e[8;'${THEIGHT}';'${TWIDTH}'t" > /dev/$1` }'\'''
 alias pushdotfiles='cd ${HOME}/.dotfiles && git commit -a && git push ; popd'
