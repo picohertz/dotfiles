@@ -3,6 +3,7 @@ path="${path}:/bin"
 path="${path}:/sbin"
 path="${path}:/usr/bin"
 path="${path}:/usr/sbin"
+path="${path}:/Applications/Xcode.app/Contents/Developer/usr/bin/"
 path="${path}:/usr/local/bin"
 path="${path}:/usr/local/sbin"
 path="${path}:/opt/local/bin"
@@ -46,6 +47,11 @@ export LSCOLORS=ExHxxxxxcx
 export PAGER="less -X"
 export EDITOR=vim
 export VISUAL=vim
+
+# Added for VLC dev
+export CC=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc
+export CXX=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++
+export OBJC=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc 
 
 autoload edit-command-line
 zle -N edit-command-line
